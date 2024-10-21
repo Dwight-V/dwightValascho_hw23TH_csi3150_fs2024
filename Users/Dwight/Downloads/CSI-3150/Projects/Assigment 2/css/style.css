@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f0f0f0; */
+    overflow: auto;
+    object-fit: contain;
+    scrollbar-width: none;
+
+    /* Variable declarations */
+    --primary-font-color: #e2b924;
+
+    --bg-img-height: 105vh;
+}
+
+.text-yellow {
+    color: var(--primary-font-color);
+}
+
+.btn-read-more {
+    background-color: var(--primary-font-color);
+    padding: 0.5rem 1rem;
+}
+
+
+/* #region ### hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    background-image: url(../assets/img/alaska/pexels-adi-k-182036-28909957.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: var(--bg-img-height);
+    color: #fff;
+}
+
+.hero .logo {
+    width: 5rem;
+    min-height: 50px;
+}
+
+.hero h1 {
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.hero i {
+    /* border: 3px red solid; */
+    font-size: 3rem;
+}
+/* #endregion */
+
+
+/* #region ### intro */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-image: url(../assets/img/alaska/pexels-dianne-maddox-2069639-3695720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: var(--bg-img-height);
+    color: #fff;
+    padding: 0 5%;
+
+}
+
+.intro .left {
+    font-size: 5rem;
+    width: 30%;
+}
+
+.intro .right {
+    width: 45%;
+}
+/* #endregion */
