@@ -8,7 +8,8 @@
     scrollbar-width: none;
 
     /* Variable declarations */
-    --primary-font-color: #e2b924;
+    --primary-font-color: #fdc80a;
+    --bg-img-alpha: 0.4;
 }
 
 .text-yellow {
@@ -17,7 +18,7 @@
 
 .btn-read-more {
     background-color: var(--primary-font-color);
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 2rem;
 }
 
 main > section {
@@ -26,7 +27,7 @@ main > section {
     background-size: cover;
 
     width: 100vw;
-    height: 105vh;
+    height: 109vh;
     color: #fff;
     padding: 0 5%;
 
@@ -44,6 +45,7 @@ main > section {
 }
 
 .hero .logo {
+    margin-top: 8rem;
     width: 5rem;
     min-height: 50px;
 }
@@ -54,8 +56,13 @@ main > section {
 }
 
 .hero i {
-    /* border: 3px red solid; */
-    font-size: 3rem;
+    border: 3px red solid;
+    font-size: 8rem;
+    margin-bottom: 8rem;
+}
+
+.hero i:hover {
+    cursor: pointer;
 }
 /* #endregion */
 
@@ -88,7 +95,15 @@ main > section {
     justify-content: space-evenly;
     flex-direction: column;
 
-    background-image: url(../assets/img/alaska/pexels-frans-van-heerden-201846-688890.jpg);
+    /* Darkening from https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/ */
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-frans-van-heerden-201846-688890.jpg);
+}
+
+.activities h2 {
+    width: 45%;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
 }
 
 .activities .gallery {
@@ -110,9 +125,23 @@ main > section {
 
 }
 
-.activities .gallery .container h3{
+.activities .gallery .container .text {
     position: absolute;
-    bottom: 5rem;
+    width: 100%;
+
+    bottom: 0;
+    /* padding-bottom: .5rem; */
+    padding-left: 1rem;
+    /* border: #fff solid 3px; */
+    background-image: linear-gradient(transparent, #2e4461);
+}
+
+.activities .gallery .container h3 {
+    font-size: 1.5rem;
+}
+
+.activities .gallery .container i {
+    font-size: 4rem;
 }
 
 #cont1 {
