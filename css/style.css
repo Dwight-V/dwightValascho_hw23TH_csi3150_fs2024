@@ -233,14 +233,44 @@ main > section {
 }
 /* #endregion */
 
+/* #region ### author */
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-sara-loeffler-2369291-4027720.jpg);
+}
+
+.author img {
+    width: 13rem;
+    border-radius: 50%;
+}
+
+.author p {
+    width: 40%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center
+}
+
+.author h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.author i {
+    font-size: 8rem;
+}
+/* #endregion */
+
 /* #region ### gallery */
 /* Need the immediate child of main to not confuse */
 main > .gallery {
     display: flex;
     align-items: center;
     padding: 0;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-sara-loeffler-2369291-4027720.jpg);
 }
 
 main > .gallery img {
