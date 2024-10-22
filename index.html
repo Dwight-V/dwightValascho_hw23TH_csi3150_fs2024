@@ -17,7 +17,7 @@
 <body>
 	<main>
 		<!-- ### Hero section -->
-		<section class="hero">
+		<section class="hero fullscreen">
 			<img src="./assets/img/personal/family_logo_no_bg.png" alt="V A L logo" class="logo">
 			<h1 class="text-yellow">Alaska</h1>
 			<h2 class="subtitle">TOUR AND TRAVEL</h2>
@@ -25,7 +25,7 @@
 		</section>
 
 		<!-- ### Intro section -->
-		<section class="intro">
+		<section class="intro fullscreen">
 			<h2 class="left text-yellow">Is a trip to alaska on your list?</h2>
 
 			<div class="right">
@@ -43,7 +43,7 @@
 
 
 		<!-- ### Activities section -->
-		<section class="activities">
+		<section class="activities fullscreen">
 			<h2 class="text-yellow">Experience Kenai Fjords & Denali Park</h2>
 
 			<div class="gallery">
@@ -70,7 +70,7 @@
 		</section>
 
 		<!-- ### recommendations section -->
-		<section class="recommendations">
+		<section class="recommendations fullscreen">
 			<!-- Needs wrapper for absolute positioning -->
 			<div class="title">
 				<h2 class="text-yellow">Bears, Trains & Icebergs with Rail from Anchorage</h2>
@@ -86,7 +86,7 @@
 		</section>
 
 		<!-- ### Stats section -->
-		<section class="stats">
+		<section class="stats fullscreen">
 			<!-- Wrapper needed for circular div -->
 			<div class="wrapper">
 				<div>
@@ -115,7 +115,7 @@
 		</section>
 
 		<!-- ### Author section -->
-		<section class="author">
+		<section class="author fullscreen">
 			<img src="./assets/img/personal/headshot.jpg" alt="">
 			<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a, placeat accusamus sunt assumenda, animi minima cupiditate sequi libero possimus laborum iste, illum consectetur laudantium omnis voluptates asperiores necessitatibus culpa."</p>
 			<h3>Dwight Valascho</h3>
@@ -123,7 +123,7 @@
 		</section>
 
 		<!-- ### Gallery section -->
-		<section class="gallery">
+		<section class="gallery fullscreen">
 			<img src="./assets/img/alaska/pexels-tomas-malik-793526-27244532.jpg" alt="">
 			<img src="./assets/img/alaska/pexels-pixabay-414131.jpg" alt="">
 			<img src="./assets/img/alaska/pexels-susan-55854-204262.jpg" alt="">
@@ -132,32 +132,31 @@
 	</main>
 
 	<!-- ### Footer section -->
-	<footer>
+	<footer class="fullscreen">
 		<div class="left">
-			<h2 class="text-yellow"></h2>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+			<h2 class="text-yellow">Contact Us</h2>
+			<ul class="contact-wrapper">
+				<li>Toll Free: 800-208-0200</li>
+				<li>Anchorage: 907-245-0200</li>
+				<li>Fax: 907-245-0400</li>
+				<li>Email: info@alaska.com</li>
 			</ul>
-			<div class="iconWrapper">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
+			<div class="icon-wrapper">
+				<i class='bx bxl-meta text-yellow'></i>
+				<i class='bx bxl-twitter text-yellow' ></i>
+				<i class='bx bxl-instagram text-yellow'></i>
+				<i class='bx bxl-pinterest-alt text-yellow' ></i>
+				<i class='bx bxl-linkedin text-yellow' ></i>
 			</div>
 		</div>
 
-		<div class="right">
-			<form action="">
-				<input type="text" name="" id="">
-				<input type="email" name="" id="">
-				<textarea name="" id="" placeholder="Message"></textarea>
-				<button type="submit"></button>
-			</form>
-		</div>
+		<form action="" class="right">
+			<!-- Hint text from https://www.w3schools.com/tags/att_input_placeholder.asp -->
+			<input type="text" name="" id="" placeholder="Name" class="form-transparent">
+			<input type="email" name="" id="" placeholder="Email" class="form-transparent">
+			<textarea name="" id="" placeholder="Message" placeholder="Message" class="form-transparent"></textarea>
+			<button type="submit" class="btn-read-more">submit</button>
+		</form>
 	</footer>
 </body>
 </html>
