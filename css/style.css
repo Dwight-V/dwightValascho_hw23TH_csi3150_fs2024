@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     /* background-color: #f0f0f0; */
-    overflow: auto;
     object-fit: contain;
     scrollbar-width: none;
 
@@ -115,7 +114,7 @@ main > section {
 .activities .gallery .container {
     position: relative;
 
-    height: 30rem;
+    height: 25rem;
     width: 30%;
 
     background-position: center;
@@ -231,5 +230,24 @@ main > section {
 
 .stats .wrapper > div p {
     font-size: 1.2rem;
+}
+/* #endregion */
+
+/* #region ### gallery */
+/* Need the immediate child of main to not confuse */
+main > .gallery {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-sara-loeffler-2369291-4027720.jpg);
+}
+
+main > .gallery img {
+    height: 100%;
+    width: 25%;
+    /* border: #000000 solid 3px; */
+
+    object-fit: cover;
 }
 /* #endregion */
