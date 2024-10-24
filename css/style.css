@@ -18,6 +18,7 @@
 .btn-read-more {
     background-color: var(--primary-font-color);
     padding: 0.8rem 2rem;
+    border: none;
 }
 
 .fullscreen {
@@ -31,7 +32,6 @@
     padding: 0 5%;
 
 }
-
 
 /* #region ### hero */
 .hero {
@@ -55,7 +55,7 @@
 }
 
 .hero i {
-    border: 3px red solid;
+    /* border: 3px red solid; */
     font-size: 8rem;
     margin-bottom: 8rem;
 }
@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: space-around;
 
-    background-image: url(../assets/img/alaska/pexels-dianne-maddox-2069639-3695720.jpg);
+    background-image:  linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-dianne-maddox-2069639-3695720.jpg);
 }
 
 .intro .left {
@@ -82,6 +82,11 @@
 
 .intro .right {
     width: 45%;
+}
+
+.intro .right p {
+    line-height: 2;
+    font-size: 1.1rem;
 }
 /* #endregion */
 
@@ -198,7 +203,7 @@
     align-items: center;
     justify-content: space-evenly;
     
-    background-image: url(../assets/img/alaska/pexels-pixabay-206776.jpg);
+    background-image:  linear-gradient(rgba(0, 0, 0, var(--bg-img-alpha)), rgba(0, 0, 0, var(--bg-img-alpha))), url(../assets/img/alaska/pexels-pixabay-206776.jpg);
 }
 
 .stats .wrapper {
@@ -266,14 +271,13 @@
 /* #endregion */
 
 /* #region ### gallery */
-/* Need the immediate child of main to not confuse */
-main > .gallery {
+section.gallery {
     display: flex;
     align-items: center;
     padding: 0;
 }
 
-main > .gallery img {
+section.gallery img {
     height: 100%;
     width: 25%;
     /* border: #000000 solid 3px; */
